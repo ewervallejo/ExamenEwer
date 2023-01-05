@@ -1,0 +1,55 @@
+
+body{
+    background: rgb(22, 25, 29);
+}
+
+.contenedor{
+    width: 150%;
+    max-width: 1800px;
+    height: 50vh;
+    margin: 40px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    
+}
+.contenedor > div,
+.contenedor .header, 
+.contenedor .footer,
+.contenedor .slaider
+{
+    background: rgb(31, 39, 56);
+    padding: 5px;
+    border-radius: 4px;
+
+}
+.contenedor .header{
+    background: rgb(31, 39, 56);
+    color: aqua;
+    grid-column-end: 2;
+    grid-column-end: 5;
+}
+
+.contenedor .header{
+    grid-column:  span 4;
+}
+.contenedor .footer{
+    grid-column:  span 4;
+    background: rgb(31, 39, 56);
+}
+.contenedor .slaider{
+    grid-column:  span 4;
+    background: rgb(31, 39, 56);
+}
+.contenedor .widget-1{
+    background:  rgb(31, 39, 56);
+    height: 300px;
+}
+@media screen and (max-width:780px){
+    body{
+        background: cornsilk;
+    }
+    
+}
